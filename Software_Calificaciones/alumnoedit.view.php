@@ -38,21 +38,7 @@ if(isset($_GET['id'])) {
 
 </head>
 <body>
-<div class="header">
-        <h1>Registro de Notas - TECNOLOGICO DE ESTUDIOS SUPERIORES HUIXQUILUCAN "ISC"</h1>
-        <h3>Usuario:  <?php echo $_SESSION["username"] ?></h3>
-</div>
-<nav>
-    <ul>
-        <li><a href="inicio.view.php">Inicio</a> </li>
-        <li class="active"><a href="alumnos.view.php">Registro de Alumnos</a> </li>
-        <li><a href="listadoalumnos.view.php">Listado de Alumnos</a> </li>
-        <li><a href="notas.view.php">Registro de Notas</a> </li>
-        <li><a href="listadonotas.view.php">Consulta de Notas</a> </li>
-        <li class="right"><a href="logout.php">Salir</a> </li>
-
-    </ul>
-</nav>
+<?php include("./Cabecera.php"); ?><br>
 
 <div class="body">
     <div class="panel">
@@ -100,9 +86,7 @@ if(isset($_GET['id'])) {
         </div>
 </div>
 
-<footer>
-    <p>Derechos reservados &copy; 2021</p>
-</footer>
+
 
 </body>
 
